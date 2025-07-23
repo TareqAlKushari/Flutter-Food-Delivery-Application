@@ -4,12 +4,23 @@ A cross-platform food delivery application built using Flutter and Dart. This pr
 
 ## Table of Contents
 
+- [Demo](#Demo)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 - [Author](#author)
+
+## 📸 Demo
+
+| Home 1                                   | Home 2                                   | Login                                      | Booking                                    |
+| ---------------------------------------- | ---------------------------------------- | ------------------------------------------ | ------------------------------------------ |
+| ![Home 1](assets/screenshots/home_1.png) | ![Home 2](assets/screenshots/home_2.png) | ![Login](assets/screenshots/Screenshot_2.png) | ![Booking](assets/screenshots/booking.png) |
+
+| Home                                 | Doctor List                                | Profile                                    | Booking                                    |
+| ------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| ![Home](assets/screenshots/home.png) | ![Doctors](assets/screenshots/doctors.png) | ![Profile](assets/screenshots/profile.png) | ![Booking](assets/screenshots/booking.png) |
 
 ## Features
 
