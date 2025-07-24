@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodly/screens/restaurant_page.dart';
 
 import '../models/restaurant.dart';
 
@@ -26,10 +27,8 @@ class _RestaurantLandscapeCardState extends State<RestaurantLandscapeCard> {
         children: [
           // TODO: Add Image
           ClipRRect(
-            // 1
             borderRadius:
             const BorderRadius.vertical(top: Radius.circular(8.0),),
-            // 2
             child: AspectRatio(
               aspectRatio: 2,
               child: Stack(
@@ -59,18 +58,19 @@ class _RestaurantLandscapeCardState extends State<RestaurantLandscapeCard> {
           ),
           // TODO: Add ListTile
           ListTile(
-            // 1
             title: Text(widget.restaurant.name, style: textTheme.titleSmall,),
-            // 2
             subtitle: Text(
               widget.restaurant.attributes,
               maxLines: 1,
               style: textTheme.bodySmall,
             ),
-            // 3
             onTap: () {
-              // ignore: avoid_print
-              print('Tap on ${widget.restaurant.name}');
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => RestaurantPage(restaurant: widget.restaurant)
+                  ),
+              );
             },
           ),
         ],
